@@ -1,0 +1,129 @@
+.header {
+  width: 100%;
+  background-color: #0000004b;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 999;
+  height: 15vh;
+  padding: 2%;
+}
+.header .logo img {
+  width: 50%;
+}
+.header .menu {
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  opacity: 0;
+  transition: 0.4s ease;
+  z-index: 2;
+  height: 100vh;
+  max-width: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.header .menu .menu-item {
+  padding: 15px 20px;
+}
+.header .menu .menu-item a {
+  color: #E53D35;
+  font-family: "Square721 Cn BT";
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+.header .main-humb {
+  z-index: 9;
+}
+.header .main-humb .hamburger {
+  height: 3rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header .main-humb .hamburger .bar {
+  height: 0.5rem;
+  width: 100%;
+  background-color: #E53D35;
+  border-radius: 0.5rem;
+}
+.header .main-humb .hamburger #top {
+  transform: translateY(-6px);
+  transition: all 0.6s ease;
+}
+.header .main-humb .hamburger #middle {
+  transition: all 0.6s ease;
+}
+.header .main-humb .hamburger #bottom {
+  transform: translateY(6px);
+  transition: all 0.6s ease;
+}
+.header .open {
+  opacity: 1;
+  max-width: 100%;
+}
+.header .open .hamburger #top {
+  transform: translateY(5px) rotate(135deg);
+}
+.header .open .hamburger #middle {
+  opacity: 0;
+  transform: rotate(360deg);
+}
+.header .open .hamburger #bottom {
+  transform: translateY(-5px) rotate(-135deg);
+}
+
+@media (min-width: 992px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    height: 15vh;
+    padding: 2%;
+  }
+  .header .logo img {
+    width: 80%;
+  }
+  .header .menu {
+    background-color: rgba(255, 0, 0, 0);
+    position: relative;
+    top: 0;
+    width: 100%;
+    right: 0;
+    opacity: 1;
+    transition: 0.4s ease;
+    z-index: 2;
+    display: flex;
+    max-width: unset;
+    flex-direction: unset;
+    justify-content: flex-end;
+  }
+  .header .menu .menu-item {
+    padding: 10px;
+    display: flex;
+    float: right;
+  }
+  .header .menu .menu-item a {
+    color: #fff;
+    font-family: "Square721 Cn BT";
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .header .menu .menu-item a:hover {
+    color: #E53D35;
+  }
+  .header .main-humb {
+    z-index: 9;
+  }
+  .header .main-humb .hamburger {
+    display: none;
+  }
+}/*# sourceMappingURL=navigation.css.map */

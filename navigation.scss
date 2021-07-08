@@ -1,0 +1,64 @@
+// font
+$Bold:'Square721 Cn BT';
+$Normal:'Square721 Cn BT';
+
+.header{width: 100%;background-color: #0000004b;display:flex;justify-content:space-between;position: fixed;z-index: 999;height:15vh;padding:2%;
+    .logo{
+        img{width: 50%;}
+    }
+
+.menu{background-color: #000000;position: absolute;top: 0;right:0;width: 100vw;opacity: 0;transition: .4s ease;z-index: 2;height :100vh;max-width: 0;overflow: hidden;display: flex;justify-content: center;text-align: center;flex-direction: column;
+    .menu-item{padding:15px 20px;
+    a{color: #E53D35;font-family:$Bold;font-size: 2rem;font-weight: 500; text-decoration: none;}
+        }
+        }
+        .main-humb{z-index: 9;
+            .hamburger{height: 3rem;width: 4rem;display: flex;justify-content: center;flex-direction: column;
+                .bar{height: .5rem;width: 100%;background-color: #E53D35;border-radius: .5rem;}
+                #top{transform: translateY(-6px);transition: all .6s ease;}
+                #middle{transition: all .6s ease;}
+                #bottom{transform: translateY(6px);transition: all .6s ease;}
+                }
+        }
+       
+            .open{opacity: 1;max-width: 100%;
+                .hamburger{
+                    #top{transform: translateY(5px) rotate(135deg);}
+                    #middle{opacity: 0; transform: rotate(360deg);}
+                    #bottom{transform: translateY(-5px) rotate(-135deg);}
+                }
+             }
+            }
+        
+    
+
+    
+
+@media (min-width: 992px) {
+    
+.header{display:flex;justify-content:space-between;position: fixed;z-index: 999;height:15vh;padding:2%;
+        .logo{
+            img{width: 80%;}
+        }
+.menu{background-color:rgba(255, 0, 0, 0);position: relative;top: 0;width:100%;right:0;opacity: 1;transition: .4s ease;z-index: 2;display: flex;max-width:unset;flex-direction:unset;justify-content: flex-end;
+  .menu-item{padding: 10px;display: flex;float: right;
+            a{color: #fff;font-family:$Bold;font-size: 2rem;font-weight: 500;
+            &:hover{
+                color: #E53D35;
+            }
+            }
+            }
+            }
+            .main-humb{z-index: 9;
+                .hamburger{display: none; }
+            }
+           
+               
+                 }
+
+
+    
+    }
+    
+
+
